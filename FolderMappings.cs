@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Pri.LongPath;
 using Shoko.Models.Server;
-using Directory = Pri.LongPath.Directory;
 
 namespace Shoko.Commons
 {
@@ -58,8 +57,9 @@ namespace Shoko.Commons
 
         public string TranslateFile(ImportFolder impfolder, string path)
         {
+            if (impfolder == null) return string.Empty;
             if (impfolder.CloudID.HasValue)
-                return string.Empty;
+                return "Somewhere over the rainbow (in the clouds)";
             string result=TranslateFile(impfolder.ImportFolderID, path);
             try
             {
@@ -70,7 +70,7 @@ namespace Shoko.Commons
                         return npath;
                 }
             }
-            catch (Exception e)
+            catch
             {
 
             }
@@ -78,8 +78,9 @@ namespace Shoko.Commons
         }
         public string TranslateDirectory(ImportFolder impfolder, string path)
         {
+            if (impfolder == null) return string.Empty;
             if (impfolder.CloudID.HasValue)
-                return string.Empty;
+                return "Somewhere over the rainbow (in the clouds)";
             string result=TranslateDirectory(impfolder.ImportFolderID, path);
             try
             {
@@ -90,7 +91,7 @@ namespace Shoko.Commons
                         return npath;
                 }
             }
-            catch (Exception e)
+            catch
             {
                 
             }
@@ -100,9 +101,10 @@ namespace Shoko.Commons
         public string TranslateFile(int folderid, string path)
         {
             LoadCheck();
-            if (string.IsNullOrEmpty(path))
+            if (path == null)
                 return string.Empty;
-            if (!_mappings.ContainsKey(folderid))
+            if (_mappings == null) return string.Empty;
+            if (!_mappings.ContainsKey(folderid) || string.IsNullOrEmpty(_mappings[folderid]))
                 return string.Empty;
             string start = Path.Combine(_mappings[folderid], path);
             try
@@ -110,9 +112,9 @@ namespace Shoko.Commons
                 if (File.Exists(start))
                     return start;
             }
-            catch (Exception e)
+            catch
             {
-                //Security issue, TODO
+                //TODO: Security issue
             }
             return string.Empty;
         }
@@ -120,9 +122,10 @@ namespace Shoko.Commons
         public string TranslateDirectory(int folderid, string path)
         {
             LoadCheck();
-            if (string.IsNullOrEmpty(path))
+            if (path == null)
                 return string.Empty;
-            if (!_mappings.ContainsKey(folderid))
+            if (_mappings == null) return string.Empty;
+            if (!_mappings.ContainsKey(folderid) || string.IsNullOrEmpty(_mappings[folderid]))
                 return string.Empty;
             string start = Path.Combine(_mappings[folderid], path);
             try
@@ -130,9 +133,9 @@ namespace Shoko.Commons
                 if (Directory.Exists(start))
                     return start;
             }
-            catch (Exception e)
+            catch
             {
-                //Security issue, TODO
+                //TODO: Security issue
             }
             return string.Empty;
         }

@@ -8,6 +8,19 @@ namespace Shoko.Commons.Extensions
 {
     public static class EnumerableExtensions
     {
+        public static IEnumerable<TSource> DistinctBy<TSource, TKey>
+            (this IEnumerable<TSource> source, Func<TSource, TKey> keySelector)
+        {
+            HashSet<TKey> seenKeys = new HashSet<TKey>();
+            foreach (TSource element in source)
+            {
+                if (seenKeys.Add(keySelector(element)))
+                {
+                    yield return element;
+                }
+            }
+        }
+
         public static IEnumerable<T> OrderByNatural<T>(this IEnumerable<T> items, Func<T, string> selector, StringComparer stringComparer = null)
         {
             var regex = new Regex(@"\d+", RegexOptions.Compiled);
@@ -17,6 +30,28 @@ namespace Shoko.Commons.Extensions
                                 .Max() ?? 0;
 
             return items.OrderBy(i => regex.Replace(selector(i), match => match.Value.PadLeft(maxDigits, '0')), stringComparer ?? StringComparer.CurrentCulture);
+        }
+
+        public static string ToRanges(this List<int> ints) {
+            if (ints.Count < 1) return "";
+            if (ints.Count == 1) return ints[0].ToString();
+            ints.Sort();
+            var lng = ints.Count;
+            var fromnums = new List<int>();
+            var tonums = new List<int>();
+            for (var i = 0; i < lng - 1; i++) {
+                if (i == 0)
+                    fromnums.Add(ints[0]);
+                if (ints[i + 1] > ints[i] + 1) {
+                    tonums.Add(ints[i]);
+                    fromnums.Add(ints[i + 1]);
+                }
+            }
+            tonums.Add(ints[lng - 1]);
+            return string.Join(", ", Enumerable.Range(0, tonums.Count).Select(
+                i => fromnums[i].ToString() +
+                     (tonums[i] == fromnums[i] ? "" : "-" + tonums[i].ToString())
+            ));
         }
 
         public static ILookup<TKey, TSource> ToLazyLookup<TKey, TSource>(this IEnumerable<TSource> source, Func<TSource, TKey> keySelector,

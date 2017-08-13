@@ -5,25 +5,24 @@ namespace Shoko.Commons.Languages
 {
     public class EnumTranslator
     {
-        
-        public static string EpisodeTypeTranslated(enEpisodeType epType)
+        public static string EpisodeTypeTranslated(EpisodeType epType)
         {
 
             Thread.CurrentThread.CurrentUICulture = Culture.Global;
 
             switch (epType)
             {
-                case enEpisodeType.Credits:
+                case EpisodeType.Credits:
                     return Properties.Resources.EpisodeType_Credits;
-                case enEpisodeType.Episode:
+                case EpisodeType.Episode:
                     return Properties.Resources.EpisodeType_Normal;
-                case enEpisodeType.Other:
+                case EpisodeType.Other:
                     return Properties.Resources.EpisodeType_Other;
-                case enEpisodeType.Parody:
+                case EpisodeType.Parody:
                     return Properties.Resources.EpisodeType_Parody;
-                case enEpisodeType.Special:
+                case EpisodeType.Special:
                     return Properties.Resources.EpisodeType_Specials;
-                case enEpisodeType.Trailer:
+                case EpisodeType.Trailer:
                     return Properties.Resources.EpisodeType_Trailer;
                 default:
                     return Properties.Resources.EpisodeType_Normal;
@@ -31,58 +30,18 @@ namespace Shoko.Commons.Languages
             }
         }
 
-        public static enEpisodeType EpisodeTypeTranslatedReverse(string epType)
+        public static EpisodeType EpisodeTypeTranslatedReverse(string epType)
         {
             Thread.CurrentThread.CurrentUICulture = Culture.Global;
 
-            if (epType == Properties.Resources.EpisodeType_Credits) return enEpisodeType.Credits;
-            if (epType == Properties.Resources.EpisodeType_Normal) return enEpisodeType.Episode;
-            if (epType == Properties.Resources.EpisodeType_Other) return enEpisodeType.Other;
-            if (epType == Properties.Resources.EpisodeType_Parody) return enEpisodeType.Parody;
-            if (epType == Properties.Resources.EpisodeType_Trailer) return enEpisodeType.Trailer;
-            if (epType == Properties.Resources.EpisodeType_Specials) return enEpisodeType.Special;
+            if (epType == Properties.Resources.EpisodeType_Credits) return EpisodeType.Credits;
+            if (epType == Properties.Resources.EpisodeType_Normal) return EpisodeType.Episode;
+            if (epType == Properties.Resources.EpisodeType_Other) return EpisodeType.Other;
+            if (epType == Properties.Resources.EpisodeType_Parody) return EpisodeType.Parody;
+            if (epType == Properties.Resources.EpisodeType_Trailer) return EpisodeType.Trailer;
+            if (epType == Properties.Resources.EpisodeType_Specials) return EpisodeType.Special;
 
-            return enEpisodeType.Episode;
-        }
-
-        public static string TorrentSourceTranslated(TorrentSourceType tsType)
-        {
-            switch (tsType)
-            {
-                case TorrentSourceType.TokyoToshokanAnime: return "Tokyo Toshokan (Anime)";
-                case TorrentSourceType.TokyoToshokanAll: return "Tokyo Toshokan (All)";
-                case TorrentSourceType.BakaBT: return "BakaBT";
-                case TorrentSourceType.Nyaa: return "Nyaa";
-                case TorrentSourceType.Sukebei: return "Sukebei Nyaa";
-                case TorrentSourceType.AnimeBytes: return "AnimeBytes";
-                default: return "Tokyo Toshokan (Anime)";
-            }
-        }
-
-        public static string TorrentSourceTranslatedShort(TorrentSourceType tsType)
-        {
-            switch (tsType)
-            {
-                case TorrentSourceType.TokyoToshokanAnime: return "TT";
-                case TorrentSourceType.TokyoToshokanAll: return "TT";
-                case TorrentSourceType.BakaBT: return "BakaBT";
-                case TorrentSourceType.Nyaa: return "Nyaa";
-                case TorrentSourceType.Sukebei: return "SukeNyaa";
-                case TorrentSourceType.AnimeBytes: return "AByt.es";
-                default: return "TT";
-            }
-        }
-
-        public static TorrentSourceType TorrentSourceTranslatedReverse(string tsType)
-        {
-            if (tsType == "Tokyo Toshokan (Anime)") return TorrentSourceType.TokyoToshokanAnime;
-            if (tsType == "Tokyo Toshokan (All)") return TorrentSourceType.TokyoToshokanAll;
-            if (tsType == "BakaBT") return TorrentSourceType.BakaBT;
-            if (tsType == "Nyaa") return TorrentSourceType.Nyaa;
-            if (tsType == "Sukebei Nyaa") return TorrentSourceType.Sukebei;
-            if (tsType == "AnimeBytes") return TorrentSourceType.AnimeBytes;
-
-            return TorrentSourceType.TokyoToshokanAnime;
+            return EpisodeType.Episode;
         }
     }
 }

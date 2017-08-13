@@ -19,7 +19,7 @@ namespace Shoko.Commons.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -1389,6 +1389,24 @@ namespace Shoko.Commons.Properties {
         public static string AssociateFile {
             get {
                 return ResourceManager.GetString("AssociateFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dual Audio.
+        /// </summary>
+        public static string Audio_Dual {
+            get {
+                return ResourceManager.GetString("Audio_Dual", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Multi Audio.
+        /// </summary>
+        public static string Audio_Multi {
+            get {
+                return ResourceManager.GetString("Audio_Multi", resourceCulture);
             }
         }
         
@@ -3571,6 +3589,24 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Delete by Preferences.
+        /// </summary>
+        public static string DeleteMultipleFilesWithPreferences_Name {
+            get {
+                return ResourceManager.GetString("DeleteMultipleFilesWithPreferences_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete files by the quality selection rules in the settings..
+        /// </summary>
+        public static string DeleteMultipleFilesWithPreferences_Tooltip {
+            get {
+                return ResourceManager.GetString("DeleteMultipleFilesWithPreferences_Tooltip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Delete Series.
         /// </summary>
         public static string DeleteSeries {
@@ -4579,6 +4615,15 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Blocked DLL files found in server directory!.
+        /// </summary>
+        public static string ErrorBlockedDll {
+            get {
+                return ResourceManager.GetString("ErrorBlockedDll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Existing.
         /// </summary>
         public static string Existing {
@@ -4750,6 +4795,15 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Creating Season.
+        /// </summary>
+        public static string Filter_CreatingSeason {
+            get {
+                return ResourceManager.GetString("Filter_CreatingSeason", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Creating Tag.
         /// </summary>
         public static string Filter_CreatingTag {
@@ -4863,6 +4917,15 @@ namespace Shoko.Commons.Properties {
         public static string Filter_RecentlyWatched {
             get {
                 return ResourceManager.GetString("Filter_RecentlyWatched", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seasons.
+        /// </summary>
+        public static string Filter_Seasons {
+            get {
+                return ResourceManager.GetString("Filter_Seasons", resourceCulture);
             }
         }
         
@@ -5385,6 +5448,15 @@ namespace Shoko.Commons.Properties {
         public static string GroupFilterConditionType_ReleaseGroup {
             get {
                 return ResourceManager.GetString("GroupFilterConditionType_ReleaseGroup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Season.
+        /// </summary>
+        public static string GroupFilterConditionType_Season {
+            get {
+                return ResourceManager.GetString("GroupFilterConditionType_Season", resourceCulture);
             }
         }
         
@@ -6964,7 +7036,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/faq/#banned-from-anidb.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/faq.html#anidb-ban.
         /// </summary>
         public static string Link_AniDBBan {
             get {
@@ -6973,7 +7045,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/faq/#banned-from-anidb.
+        ///   Looks up a localized string similar to http://shokoanime.com/FAQ/#Banned-from-anidb.
         /// </summary>
         public static string Link_AniDBBanned {
             get {
@@ -6982,7 +7054,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/Shoko-desktop/settings/#anidb.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/desktop/settings.html#anidb.
         /// </summary>
         public static string Link_AniDBSettings {
             get {
@@ -7000,7 +7072,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/changelog.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/changelog.html.
         /// </summary>
         public static string Link_Changelog {
             get {
@@ -7009,7 +7081,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/Shoko-server/configuring-Shoko-server/#cloud-accounts.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/server/cloud.html.
         /// </summary>
         public static string Link_CloudAccounts {
             get {
@@ -7018,7 +7090,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/faq/#what-are-community-recommendations.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/faq.html#community-recommendations.
         /// </summary>
         public static string Link_CommunityRecommendation {
             get {
@@ -7063,7 +7135,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/Shoko-desktop/utilities/file-renaming/.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/desktop/utilities.html#file-renaming.
         /// </summary>
         public static string Link_FileRenaming {
             get {
@@ -7081,7 +7153,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/Shoko-desktop/collection/filters/#what-are-filters.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/desktop/collection.html#filters.
         /// </summary>
         public static string Link_GroupFilters {
             get {
@@ -7090,7 +7162,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/Shoko-desktop/.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/index.html.
         /// </summary>
         public static string Link_Help {
             get {
@@ -7108,7 +7180,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/Shoko-server/configuring-Shoko-server/#import-folders.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/server/import.html.
         /// </summary>
         public static string Link_ImportFolders {
             get {
@@ -7117,7 +7189,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/Shoko-server/configuring-Shoko-server/#integrity-check.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/server/integrity.html.
         /// </summary>
         public static string Link_Integrity {
             get {
@@ -7126,7 +7198,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/Shoko-desktop/collection/collection-overview/#linking.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/faq.html#community-links.
         /// </summary>
         public static string Link_Linking {
             get {
@@ -7135,7 +7207,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/Shoko-desktop/settings/#community-sites.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/desktop/settings.html#mal.
         /// </summary>
         public static string Link_MAL {
             get {
@@ -7153,7 +7225,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/setup/mysql/.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/server/mysql.html.
         /// </summary>
         public static string Link_MySQL {
             get {
@@ -7162,7 +7234,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/Shoko-desktop/settings/#essential.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/desktop/settings.html#relations.
         /// </summary>
         public static string Link_RelationSettings {
             get {
@@ -7189,7 +7261,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/setup/sqlserver/.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/server/sqlserver.html.
         /// </summary>
         public static string Link_SQLServer {
             get {
@@ -7198,7 +7270,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/Shoko-desktop/settings/#community-sites.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/desktop/settings.html#tmdb.
         /// </summary>
         public static string Link_TMDb {
             get {
@@ -7207,7 +7279,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/Shoko-desktop/settings/#community-sites.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/desktop/settings.html#trakt.
         /// </summary>
         public static string Link_Trakt {
             get {
@@ -7216,7 +7288,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/Shoko-desktop/settings/#community-sites.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/desktop/settings.html#tvdb.
         /// </summary>
         public static string Link_TvDB {
             get {
@@ -7225,7 +7297,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/Shoko-desktop/settings/#video-player.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/desktop/settings.html#video-player.
         /// </summary>
         public static string Link_VideoPlayer {
             get {
@@ -7234,7 +7306,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://shokoanime.com/Shoko-desktop/settings/#web-cache.
+        ///   Looks up a localized string similar to http://docs.shokoanime.com/desktop/settings.html#web-cache.
         /// </summary>
         public static string Link_WebCache {
             get {
@@ -7392,6 +7464,15 @@ namespace Shoko.Commons.Properties {
         public static string Main_User {
             get {
                 return ResourceManager.GetString("Main_User", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Autolink MAL Series.
+        /// </summary>
+        public static string MAL_AutoLink {
+            get {
+                return ResourceManager.GetString("MAL_AutoLink", resourceCulture);
             }
         }
         
@@ -8152,6 +8233,204 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Audio Codecs.
+        /// </summary>
+        public static string MultipleFilesTab_AudioCodecs {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_AudioCodecs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete on Import.
+        /// </summary>
+        public static string MultipleFilesTab_EnableDeleteOnImport {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_EnableDeleteOnImport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Run this check on import, and delete old files if they don&apos;t meet the standards..
+        /// </summary>
+        public static string MultipleFilesTab_EnableDeleteOnImport_Tooltip {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_EnableDeleteOnImport_Tooltip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preferences.
+        /// </summary>
+        public static string MultipleFilesTab_Preferences {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_Preferences", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to These are use to compare the quality of files. The order of Types determines the importance of comparison..
+        /// </summary>
+        public static string MultipleFilesTab_Preferences_Info {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_Preferences_Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prefer 8bit Video.
+        /// </summary>
+        public static string MultipleFilesTab_Preferences_Prefer8bit {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_Preferences_Prefer8bit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Requirements.
+        /// </summary>
+        public static string MultipleFilesTab_Requirements {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_Requirements", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Allow Deletion of Importing Files.
+        /// </summary>
+        public static string MultipleFilesTab_Requirements_DeleteImportedFiles {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_Requirements_DeleteImportedFiles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Allow deletion of files as they are being imported if they don&apos;t meet the standards. This applies when deleting on import is enabled.
+        /// </summary>
+        public static string MultipleFilesTab_Requirements_DeleteImportedFiles_Tooltip {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_Requirements_DeleteImportedFiles_Tooltip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to These are used to determine which files to keep or delete. All checks must pass for the file to be kept. Files won&apos;t be deleted if there is only one per episode..
+        /// </summary>
+        public static string MultipleFilesTab_Requirements_Info {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_Requirements_Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Audio Stream Count.
+        /// </summary>
+        public static string MultipleFilesTab_Requirements_MinimumAudioStreamCount {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_Requirements_MinimumAudioStreamCount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sub Stream Count.
+        /// </summary>
+        public static string MultipleFilesTab_Requirements_MinimumSubStreamCount {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_Requirements_MinimumSubStreamCount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Max Number of Files to Keep.
+        /// </summary>
+        public static string MultipleFilesTab_Requirements_NumberOfFilesToKeep {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_Requirements_NumberOfFilesToKeep", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Require 10bit Video.
+        /// </summary>
+        public static string MultipleFilesTab_Requirements_Require10bit {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_Requirements_Require10bit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resolutions.
+        /// </summary>
+        public static string MultipleFilesTab_Resolutions {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_Resolutions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sources.
+        /// </summary>
+        public static string MultipleFilesTab_Sources {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_Sources", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sub Groups.
+        /// </summary>
+        public static string MultipleFilesTab_SubGroups {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_SubGroups", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add a Sub Group.
+        /// </summary>
+        public static string MultipleFilesTab_SubGroups_Add {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_SubGroups_Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auto Deletion Settings.
+        /// </summary>
+        public static string MultipleFilesTab_Title {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Types.
+        /// </summary>
+        public static string MultipleFilesTab_Types {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_Types", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add a Requirement Type.
+        /// </summary>
+        public static string MultipleFilesTab_Types_Add {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_Types_Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Video Codecs.
+        /// </summary>
+        public static string MultipleFilesTab_VideoCodecs {
+            get {
+                return ResourceManager.GetString("MultipleFilesTab_VideoCodecs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Episode Range.
         /// </summary>
         public static string MultiTypeRange {
@@ -8661,6 +8940,15 @@ namespace Shoko.Commons.Properties {
         public static string PromptRateSeries {
             get {
                 return ResourceManager.GetString("PromptRateSeries", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Proxy.
+        /// </summary>
+        public static string Proxy {
+            get {
+                return ResourceManager.GetString("Proxy", resourceCulture);
             }
         }
         
@@ -9601,11 +9889,29 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Recent.
+        /// </summary>
+        public static string Rename_Last {
+            get {
+                return ResourceManager.GetString("Rename_Last", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Is Manually Linked.
         /// </summary>
         public static string Rename_ManuallyLinked {
             get {
                 return ResourceManager.GetString("Rename_ManuallyLinked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move if Needed.
+        /// </summary>
+        public static string Rename_MoveIfNeeded {
+            get {
+                return ResourceManager.GetString("Rename_MoveIfNeeded", resourceCulture);
             }
         }
         
@@ -11428,6 +11734,15 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to To have ShokoMetada sync with Shoko, input the Plex Host which you can get from your web browser and the Plex Library ID which are the numbers after the following part; [key=%2Flibrary%2Fsections%2F] for the library you&apos;ve clicked..
+        /// </summary>
+        public static string ShokoMetadata_Info {
+            get {
+                return ResourceManager.GetString("ShokoMetadata_Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Shoko Server.
         /// </summary>
         public static string ShokoServer {
@@ -12157,6 +12472,15 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Plex Settings For ShokoMetadata.
+        /// </summary>
+        public static string TAB_Settings_Plex {
+            get {
+                return ResourceManager.GetString("TAB_Settings_Plex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Relation Settings.
         /// </summary>
         public static string TAB_Settings_RelationSettings {
@@ -12450,6 +12774,15 @@ namespace Shoko.Commons.Properties {
         public static string Toolbar_Shutdown {
             get {
                 return ResourceManager.GetString("Toolbar_Shutdown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Launch Web UI.
+        /// </summary>
+        public static string Toolbar_WebUI {
+            get {
+                return ResourceManager.GetString("Toolbar_WebUI", resourceCulture);
             }
         }
         
@@ -13174,7 +13507,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AniDB Commands in Queue.
+        ///   Looks up a localized string similar to General Operations in Queue:.
         /// </summary>
         public static string Tooltip_QueueGeneral {
             get {
@@ -13183,7 +13516,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Files Waiting to be Hashed.
+        ///   Looks up a localized string similar to Files Waiting to be Hashed:.
         /// </summary>
         public static string Tooltip_QueueHasher {
             get {
@@ -13192,7 +13525,7 @@ namespace Shoko.Commons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Images Awaiting Download.
+        ///   Looks up a localized string similar to Images Awaiting Download:.
         /// </summary>
         public static string Tooltip_QueueImages {
             get {
@@ -13890,6 +14223,15 @@ namespace Shoko.Commons.Properties {
         public static string TryAgain {
             get {
                 return ResourceManager.GetString("TryAgain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Autolink TvDB Series.
+        /// </summary>
+        public static string TvDB_AutoLink {
+            get {
+                return ResourceManager.GetString("TvDB_AutoLink", resourceCulture);
             }
         }
         
@@ -14691,6 +15033,24 @@ namespace Shoko.Commons.Properties {
         public static string Utilities_Folder {
             get {
                 return ResourceManager.GetString("Utilities_Folder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Local.
+        /// </summary>
+        public static string Utilities_FolderLocal {
+            get {
+                return ResourceManager.GetString("Utilities_FolderLocal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remote.
+        /// </summary>
+        public static string Utilities_FolderRemote {
+            get {
+                return ResourceManager.GetString("Utilities_FolderRemote", resourceCulture);
             }
         }
         
